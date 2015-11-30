@@ -1,0 +1,25 @@
+{
+  "name": "wptt.tofu",
+  "description": "WordPress Theme Template, Tofu",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kurohara/wptt.tofu",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-pot": "^0.2.1",
+    "grunt-split-file": "^1.0.0",
+    "inquirer": "^0.8.5"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-jade-mod": "^1.0.0",
+    "phpjade": "^1.4.0"
+  }
+}

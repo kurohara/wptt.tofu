@@ -1,0 +1,43 @@
+:php
+  namespace #{wpttenv.name};
+  /**
+   * The sidebar containing the main widget area
+   *
+   * @package WordPress
+   * @subpackage #{wpttenv.name}
+   * @since wptt 1.0
+   */
+
+- if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) :
+
+div#secondary.secondary
+
+  - if ( has_nav_menu( 'primary' ) ) :
+  nav#site-navigation.main-navigation(role="navigation")
+    :php
+      // Primary navigation menu.
+      wp_nav_menu( array(
+        'menu_class'     => 'nav-menu',
+        'theme_location' => 'primary',
+      ) );
+
+  - endif
+
+  - if ( has_nav_menu( 'social' ) ) :
+  nav#social-navigation.social-navigation(role="navigation")
+    :php
+      // Social links navigation menu.
+      wp_nav_menu( array(
+        'theme_location' => 'social',
+        'depth'          => 1,
+        'link_before'    => '<span class="screen-reader-text">',
+        'link_after'     => '</span>',
+      ) );
+  - endif
+
+  - if ( is_active_sidebar( 'sidebar-1' ) ) :
+  div#widget-area.widget-area(role="complementary")
+    - dynamic_sidebar( 'sidebar-1' )
+  - endif
+
+- endif

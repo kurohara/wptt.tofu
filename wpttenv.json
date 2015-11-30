@@ -1,0 +1,16 @@
+{
+  "name": "tofutheme",
+  "uri": "",
+  "author": "Hiroyoshi Kurohara(Microgadget,inc.)",
+  "authoruri": "",
+  "description": "",
+  "version": "1.0.0",
+  "license": "GNU General Public License v2 or later",
+  "licenseuri": "http://www.gnu.org/licenses/gpl-2.0.html",
+  "tags": "",
+  "themedir": "/Users/kurohara/work/wordpress/wp-content/themes/mgitest",
+  "jadedir": "./src",
+  "styldir": "./src",
+  "prebuilt": "./src",
+  "tmpdir": "./tmp"
+}
